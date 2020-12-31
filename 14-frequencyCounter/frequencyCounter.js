@@ -1,41 +1,42 @@
-function searchArr(array, target) {
-    for ( var i = 0; i < array.length; i++)
+function frequencyCounter(word) {
+    let keys = [];
+  
+  
+    for (let i = 0; i < word.length; i++)
     {
-      if (array[i] === target)
-        return true;
-    }
-    // target not found
-    return false;
-  }
   
-  function outputArr(array, word) 
-  {
-      console.log("{ ");
-     for (var i = 0; i < array.length; i++)
-     {
-       console.log(word[i] + ":" + array[i]);
-     }
-     console.log(" }");
-  }
-  
-  function frequencyCounter(word) {
-    var aString = new String(word);
-    var keys = [];
-  
-    for (var i = 0; i < word.length; i++)
-    {
-      if (searchArr(keys, word[i]) == true)
+      // replace include with keys[word[i]]
+      if (keys[word[i]])
       {
-        //char exists in keys array
-        keys[i]++;
+     //char exists in keys array
+        keys[word[i]] += 1
       }
       else // char is not in keys array
-        keys[i] = 1;
+        keys[word[i]] = 1;
     }
-  outputArr(keys, word);
+  return keys
   }
   
+frequencyCounter("apple");
 
-frequencyCounter("computer");
 // Do not edit this line;
 module.exports = frequencyCounter;
+
+
+
+
+
+// function frequencyCounter (word) {
+//     let values = []
+  
+//     for (let i = 0; i < word.length; i++) {
+//       if (values[word[i]]) {
+//         values[word[i]] += 1 
+//       }
+//       else {
+//         values[word[i]] = 1
+//       }
+//     }
+//     return values;
+//   }
+  
