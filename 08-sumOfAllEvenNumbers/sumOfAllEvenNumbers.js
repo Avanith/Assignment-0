@@ -1,10 +1,10 @@
 function sumOfAllEvenNumbers(nums) {
-  evenNumberSumTotal = 0;
+  evenNumberTotal = 0;
   nums.forEach(element => {
     if (element % 2 == 0 || element == 0)
-      evenNumberSumTotal++
+      evenNumberTotal++
   });
-  return evenNumberSumTotal;
+  return evenNumberTotal;
 }
 
 // Do not edit this line;
