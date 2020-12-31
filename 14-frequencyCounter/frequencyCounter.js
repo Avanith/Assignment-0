@@ -1,7 +1,6 @@
 function frequencyCounter(word) {
-    let keys = [];
-  
-  
+    let keys = {};
+
     for (let i = 0; i < word.length; i++)
     {
   
@@ -17,26 +16,9 @@ function frequencyCounter(word) {
   return keys
   }
   
-frequencyCounter("apple");
-
 // Do not edit this line;
 module.exports = frequencyCounter;
 
 
 
 
-
-// function frequencyCounter (word) {
-//     let values = []
-  
-//     for (let i = 0; i < word.length; i++) {
-//       if (values[word[i]]) {
-//         values[word[i]] += 1 
-//       }
-//       else {
-//         values[word[i]] = 1
-//       }
-//     }
-//     return values;
-//   }
-  
