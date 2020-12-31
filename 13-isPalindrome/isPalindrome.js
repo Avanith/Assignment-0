@@ -24,7 +24,7 @@ function isPalindrome(word) {
     if (topOfStack != frontOfQueue)
       return palindrome;
   }
-
+  
   palindrome = true;
   return palindrome;
 }
