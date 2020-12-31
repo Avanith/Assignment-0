@@ -42,5 +42,8 @@
     "mocha": "^7.1.2",
     "moment": "^2.25.1",
     "sinon": "^9.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
