@@ -4,7 +4,8 @@ class MySolution {
   constructor() {
     this.flag = false; // this is optional to use;
   }
-
+  // We will be using the splice method since we are
+  // not passing the first and last index locations
   binarySearch(nums, target) {
     let arr = Array.from(nums);
     let mid = Math.floor(arr.length/2); 
