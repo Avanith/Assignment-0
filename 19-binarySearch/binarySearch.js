@@ -4,8 +4,8 @@ class MySolution {
   constructor() {
     this.flag = false; // this is optional to use;
   }
-  // We will be using the splice method since we are
-  // not passing the first and last index locations
+  // We will be using the splice method on the array since we
+  // are not passing the first and last index locations
   binarySearch(nums, target) {
     let arr = Array.from(nums);
     let mid = Math.floor(arr.length/2); 
@@ -26,7 +26,8 @@ class MySolution {
     { // Splice array from mid+1 to last index, then search again
       arr = arr.splice(mid+1, last);
       return this.binarySearch(arr, target);
-    } // If original first or last is != target, return false
+    } // The recursion eventually tests the 
+    // original first or last index, if it is != target, return false
     else return false;
   }
 }
